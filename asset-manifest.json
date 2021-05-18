@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/memoryapp/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/memoryapp/static/js/main.92f03590.chunk.js",
+    "main.js.map": "/memoryapp/static/js/main.92f03590.chunk.js.map",
+    "runtime-main.js": "/memoryapp/static/js/runtime-main.edb803f6.js",
+    "runtime-main.js.map": "/memoryapp/static/js/runtime-main.edb803f6.js.map",
+    "static/js/2.c0b8d26d.chunk.js": "/memoryapp/static/js/2.c0b8d26d.chunk.js",
+    "static/js/2.c0b8d26d.chunk.js.map": "/memoryapp/static/js/2.c0b8d26d.chunk.js.map",
+    "static/js/3.d2de5478.chunk.js": "/memoryapp/static/js/3.d2de5478.chunk.js",
+    "static/js/3.d2de5478.chunk.js.map": "/memoryapp/static/js/3.d2de5478.chunk.js.map",
+    "index.html": "/memoryapp/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/memoryapp/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.c0b8d26d.chunk.js.LICENSE.txt": "/memoryapp/static/js/2.c0b8d26d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/memoryapp/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edb803f6.js",
+    "static/js/2.c0b8d26d.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.92f03590.chunk.js"
+  ]
+}
