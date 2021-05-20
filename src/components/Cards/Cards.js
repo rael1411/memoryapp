@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./Cards.css"
+import "./Cards.css";
+import Score from "./Score/Score"
 import antimage from "../../assets/img/antimage_lg.png";
 import emberSpirit from "../../assets/img/ember_spirit_lg.png";
 import furion from "../../assets/img/furion_lg.png";
@@ -17,65 +18,67 @@ function Cards(props) {
     {
       url: antimage,
       clicked: false,
-      id: 0
+      id: 0,
     },
     {
       url: emberSpirit,
       clicked: false,
-      id: 1
+      id: 1,
     },
     {
       url: furion,
       clicked: false,
-      id: 2
+      id: 2,
     },
     {
       url: invoker,
       clicked: false,
-      id: 3
+      id: 3,
     },
     {
       url: leshrac,
       clicked: false,
-      id: 4
+      id: 4,
     },
     {
       url: nevermore,
       clicked: false,
-      id: 5
+      id: 5,
     },
     {
       url: nightStalker,
       clicked: false,
-      id: 6
+      id: 6,
     },
     {
       url: queenOfPain,
       clicked: false,
-      id: 7
+      id: 7,
     },
     {
       url: rubick,
       clicked: false,
-      id: 8
+      id: 8,
     },
     {
       url: stormSpirit,
       clicked: false,
-      id: 9
+      id: 9,
     },
     {
       url: windrunner,
       clicked: false,
-      id: 10
+      id: 10,
     },
     {
       url: wisp,
       clicked: false,
-      id: 11
+      id: 11,
     },
-  ]
-  const [cards, changeCards] = useState(initialCards);
+  ];
+  const [cards, setCards] = useState(initialCards);
+  const [score, setScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(0);
 
   const shuffleFunction = (cards) => {
     let tempArray = [...cards];
@@ -97,33 +100,49 @@ function Cards(props) {
   //otherwise resets the game
   const handleClick = (id) => {
     let tempArray = [...cards];
-    let index = tempArray.findIndex(x => x.id === id);
+    let index = tempArray.findIndex((x) => x.id === id);
     if (!tempArray[index].clicked) {
       tempArray[index].clicked = true;
-      changeCards(tempArray);
-      changeCards(card => shuffleFunction(cards));
-      //update score here
+      setCards(tempArray);
+      setCards((card) => shuffleFunction(cards));
+      setScore((score) => score + 1);
+    } else {
+      setCards( shuffleFunction(initialCards));
+      setScore(0);
     }
-    else {
-      changeCards(initialCards);
-      //reset score here (maybe own function?)
-    }
-  } 
+  };
+  //shuffles the cards the first t
   useEffect(() => {
-    changeCards(cards => shuffleFunction(cards));
-  }, [])
+    setCards((cards) => shuffleFunction(cards));
+  }, []);
+  //when the score updates, it checks/updates the max score
+  //it also loops the game if all cards have been clicked
+  useEffect(() => {
+    score > maxScore && setMaxScore(score);
+    console.log(maxScore)
+    score % 12 === 0 && score !== 0 && setCards(shuffleFunction(initialCards))
+  }, [score, maxScore]);
 
   return (
-    <div id="cards-wrap">
-      <button onClick={() => changeCards(cards => shuffleFunction(cards))}>Shuffle!</button>
-      <ul id="cardList">
-        {cards.map((card) => (
-          <li className="card" key={card.id}>
-            <img src={card.url} alt="" onClick={() => handleClick(card.id)}></img>
-            {card.clicked.toString()}
-          </li>
-        ))}
-      </ul>
+    <div>
+      <div id="cards-wrap">
+        <button onClick={() => setCards((cards) => shuffleFunction(cards))}>
+          Shuffle!
+        </button>
+        <ul id="cardList">
+          {cards.map((card) => (
+            <li className="card" key={card.id}>
+              <img
+                src={card.url}
+                alt=""
+                onClick={() => handleClick(card.id)}
+              ></img>
+              {card.clicked.toString()}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Score score={score} maxScore={maxScore}/>
     </div>
   );
 }
