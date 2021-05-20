@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/memoryapp/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/memoryapp/static/js/main.92f03590.chunk.js",
-    "main.js.map": "/memoryapp/static/js/main.92f03590.chunk.js.map",
-    "runtime-main.js": "/memoryapp/static/js/runtime-main.edb803f6.js",
-    "runtime-main.js.map": "/memoryapp/static/js/runtime-main.edb803f6.js.map",
-    "static/js/2.c0b8d26d.chunk.js": "/memoryapp/static/js/2.c0b8d26d.chunk.js",
-    "static/js/2.c0b8d26d.chunk.js.map": "/memoryapp/static/js/2.c0b8d26d.chunk.js.map",
-    "static/js/3.d2de5478.chunk.js": "/memoryapp/static/js/3.d2de5478.chunk.js",
-    "static/js/3.d2de5478.chunk.js.map": "/memoryapp/static/js/3.d2de5478.chunk.js.map",
+    "main.css": "/memoryapp/static/css/main.056cc759.chunk.css",
+    "main.js": "/memoryapp/static/js/main.c7a37413.chunk.js",
+    "main.js.map": "/memoryapp/static/js/main.c7a37413.chunk.js.map",
+    "runtime-main.js": "/memoryapp/static/js/runtime-main.30eff5ad.js",
+    "runtime-main.js.map": "/memoryapp/static/js/runtime-main.30eff5ad.js.map",
+    "static/js/2.a45056c4.chunk.js": "/memoryapp/static/js/2.a45056c4.chunk.js",
+    "static/js/2.a45056c4.chunk.js.map": "/memoryapp/static/js/2.a45056c4.chunk.js.map",
     "index.html": "/memoryapp/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/memoryapp/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.c0b8d26d.chunk.js.LICENSE.txt": "/memoryapp/static/js/2.c0b8d26d.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/memoryapp/static/media/logo.6ce24c58.svg"
+    "static/css/main.056cc759.chunk.css.map": "/memoryapp/static/css/main.056cc759.chunk.css.map",
+    "static/js/2.a45056c4.chunk.js.LICENSE.txt": "/memoryapp/static/js/2.a45056c4.chunk.js.LICENSE.txt",
+    "static/media/antimage_lg.f263be1a.png": "/memoryapp/static/media/antimage_lg.f263be1a.png",
+    "static/media/ember_spirit_lg.ee0522b4.png": "/memoryapp/static/media/ember_spirit_lg.ee0522b4.png",
+    "static/media/furion_lg.59fdf49d.png": "/memoryapp/static/media/furion_lg.59fdf49d.png",
+    "static/media/invoker_lg.24977931.png": "/memoryapp/static/media/invoker_lg.24977931.png",
+    "static/media/leshrac_lg.c9420868.png": "/memoryapp/static/media/leshrac_lg.c9420868.png",
+    "static/media/nevermore_lg.99f42ea7.png": "/memoryapp/static/media/nevermore_lg.99f42ea7.png",
+    "static/media/night_stalker_lg.f5d67772.png": "/memoryapp/static/media/night_stalker_lg.f5d67772.png",
+    "static/media/queenofpain_lg.324fcd7e.png": "/memoryapp/static/media/queenofpain_lg.324fcd7e.png",
+    "static/media/rubick_lg.b0c503d9.png": "/memoryapp/static/media/rubick_lg.b0c503d9.png",
+    "static/media/storm_spirit_lg.9bb3ff7b.png": "/memoryapp/static/media/storm_spirit_lg.9bb3ff7b.png",
+    "static/media/windrunner_lg.130fb198.png": "/memoryapp/static/media/windrunner_lg.130fb198.png",
+    "static/media/wisp_lg.3e9ae2fc.png": "/memoryapp/static/media/wisp_lg.3e9ae2fc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.edb803f6.js",
-    "static/js/2.c0b8d26d.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.92f03590.chunk.js"
+    "static/js/runtime-main.30eff5ad.js",
+    "static/js/2.a45056c4.chunk.js",
+    "static/css/main.056cc759.chunk.css",
+    "static/js/main.c7a37413.chunk.js"
   ]
 }
